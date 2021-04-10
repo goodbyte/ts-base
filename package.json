@@ -1,0 +1,25 @@
+{
+  "name": "ts-base",
+  "version": "1.0.0",
+  "description": "Typescript base project",
+  "scripts": {
+    "start": "node dist",
+    "dev": "ts-node-dev --respawn --notify false -- src/index.ts",
+    "build": "npm run clean && tsc",
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "goodbyte",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.23.0",
+    "eslint-config-goodbyte": "^1.0.1",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}
